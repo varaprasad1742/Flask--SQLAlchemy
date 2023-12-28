@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div>
+        <form method="post" action="success" class="container">
+            <input type="text" class="input-user" name="uname" id="uname" placeholder="Enter Username here">
+            <input type="text" class="input-user" name="email" id="email" placeholder="Enter email here">
+            <!-- <input type="number" class="input-user" name="phone" id="phone" placeholder="Enter your mobile number"> -->
+            <input type="password" class="input-user" name="pass" id="pass" placeholder="Password">
+            <!-- <input type="password" class="input-user" name="cpass" id="cpass" placeholder="Confirm Password"> -->
+            <button type="submit" id="button">Create</button>
+        </form>
+    </div>
+</body>
+</html>

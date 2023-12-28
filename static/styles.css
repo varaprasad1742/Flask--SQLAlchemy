@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 2px solid black;
+    height: 400px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.container >input{
+    margin:15px;
+    font-size: 20px;
+}
+
+#button{
+    font-size: 30px;
+    background-color: pink;
+    border-radius: 8px;
+
+}
