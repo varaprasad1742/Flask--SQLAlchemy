@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <th>{{ user.id }}</th>
+            <th>{{ user.username }}</th>
+            <th>{{ user.email }}</th>
+            <th>{{ user.password }}</th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

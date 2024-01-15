@@ -36,6 +36,10 @@ def success():
         except:
             print(f"Error has occured")
     return render_template('sucess.html')
+@app.route('/check')
+def user_details():
+    users = User.query.all()
+    return render_template('user.html',users=users)
 
 
 if __name__=='__main__':
@@ -43,9 +47,8 @@ if __name__=='__main__':
         db.create_all()
       
         # Retrieve all users from the 'User' table
-        users = User.query.all()
+        
 
         # Do something with the data
-        for user in users:
-            print(user.id, user.username, user.email, user.password)
+        
     app.run(debug=True)
